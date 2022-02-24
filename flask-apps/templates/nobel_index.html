@@ -1,0 +1,14 @@
+<head><title>Test</title> 
+    <meta charset=utf-8> </head>
+    <body>
+        <h1>Nobel Prize Database</h1>
+               
+        <button> <a href="/all">To see all data</a></button>
+        <form action="{{url_for('year', year=yr)}}" method="POST">
+            <label for="year">To check nobel prized for a specific year:</label>
+            <input type="text" name='yr'/>
+            <input type="submit" value="Go"/>
+        </form>
+        <button> <a href="/add">Add additional data</a></button>
+
+    </body>
